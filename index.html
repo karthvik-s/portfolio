@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css"  />
+    <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+</head>
+<body>
+<!-- Neural Network Animated Background -->
+    <!-- <div id="particles-js"></div>
+    <script src="particles-config.js"></script> -->
+    <nav id="desktop-nav">
+        <div class="logo">Portfolio.</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Portfolio.</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+     <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/profile-pic.png" alt="Karthvik Sarvade profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Karthvik Sarvade</h1>
+          <p class="section__text__p2">AI/ML Engineer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/karthvik-sarvade-resume.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/karthvik-s'"
+            />
+          </div>
+        </div>
+    </section> 
+    <!-- <section id="profile">
+      <div class="section__pic-container">
+          <img src="./assets/profile-pic.png" alt="Karthvik Sarvade profile picture" />
+      </div>
+      <div class="section__text">
+          <h1 id="typewriter-container">
+              <span id="typewriter-text"></span>
+          </h1>
+          <p class="section__text__p2">AI/ML Engineer</p>
+          <div class="btn-container">
+              <button class="btn btn-color-2" onclick="window.open('./assets/karthvik-sarvade-resume.pdf')">
+                  Download CV
+              </button>
+              <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                  Contact Info
+              </button>
+          </div>
+          <div id="socials-container">
+              <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/karthvik-s'" />
+          </div>
+      </div>
+  </section> -->
+    <section id="education">
+      <p class="section__text__p1">My academic journey</p>
+      <h1 class="title">Education</h1>
+      <div class="section-container">
+          <div class="education-details-container">
+              <div class="education-containers">
+                  <div class="details-container">
+                      <img src="./assets/nyu-logo.png" alt="NYU logo" class="uni-logo" />
+                      <h3>Master of Science in Computer Science</h3>
+                      <p>New York University</p>
+                      <p class="education-date">August 2022 – May 2024</p>
+                      <ul>
+                          <li>Specialized in Machine Learning, Deep Learning and Cloud Technologies.</li>
+                          <li>Led research on Machine Unlearning in LLMs, to selectively remove information while maintaining model performance </li>
+                          <li>Served as Graduate Teaching Assistant for Advanced Machine Learning (CS-GY 6923)</li>
+                      </ul>
+                  </div>
+                  <div class="details-container">
+                      <img src="./assets/jain-logo.png" alt="Jain University logo" class="uni-logo" />
+                      <h3>Bachelor's in Electronics & Computers</h3>
+                      <p>Jain University</p>
+                      <p class="education-date">August 2018 – May 2022</p>
+                      <ul>
+                          <li>Graduated with First Class Honours, consistently ranked in top 5% of class across all semesters</li>
+                          <li>Conducted research in IoT and Embedded Systems, published in IEEE conferences.</li>
+                          <li>Worked as a Research Assistant, collaborating on industrial automation projects.</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section id="skills">
+    <p class="section__text__p1">My Technical Expertise</p>
+    <h1 class="title">Skills</h1>
+    <div class="skills-container">
+        <div class="skill-card">
+            <h3>Programming & Frameworks</h3>
+            <div class="skill-badges">
+                <span class="badge">Python</span>
+                <span class="badge">R</span>
+                <span class="badge">SQL</span>
+                <span class="badge">C</span>
+                <span class="badge">C++</span>
+                <span class="badge">TensorFlow</span>
+                <span class="badge">PyTorch</span>
+                <span class="badge">Keras</span>
+                <span class="badge">Hugging Face Transformers</span>
+
+            </div>
+        </div>
+        <div class="skill-card">
+          <h3>Deep Learning</h3>
+          <div class="skill-badges">
+              <span class="badge">Neural Networks (FNN, CNN, RNN)</span>
+              <span class="badge">Transformers</span>
+              <span class="badge">GANs</span>
+              <span class="badge">NLP Models (BERT, GPT, T5)</span>
+          </div>
+      </div>
+  
+        <div class="skill-card">
+            <h3>Database</h3>
+            <div class="skill-badges">
+                <span class="badge">MySQL</span>
+                <span class="badge">PostgreSQL</span>
+                <span class="badge">MongoDB</span>
+                <span class="badge">Cassandra</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h3>Cloud Platforms</h3>
+            <div class="skill-badges">
+                <span class="badge">AWS (SageMaker, Lambda, EC2, S3)</span>
+                <span class="badge">Azure (Databricks, MLflow)</span>
+                <span class="badge">GCP (Vertex AI, BigQuery)</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <h3>BI & Data Visualization</h3>
+            <div class="skill-badges">
+                <span class="badge">Tableau</span>
+                <span class="badge">Power BI</span>
+                <span class="badge">Google Analytics</span>
+                <span class="badge">d3.js</span>
+                <span class="badge">Matplotlib</span>
+                <span class="badge">Seaborn</span>
+                <span class="badge">Bokeh</span>
+            </div>
+        </div>
+        <!-- <div class="skill-card">
+            <h3>Model Deployment</h3>
+            <div class="skill-badges">
+                <span class="badge">Docker</span>
+                <span class="badge">Kubernetes</span>
+                <span class="badge">CI/CD Pipelines</span>
+            </div>
+        </div> -->
+        
+        <div class="skill-card">
+            <h3>MLOps & Model Deployment </h3>
+            <div class="skill-badges">
+                <span class="badge">AutoML</span>
+                <span class="badge">Azure MLOps</span>
+                <span class="badge">Azure ML Designer</span>
+                <span class="badge">Docker</span>
+                <span class="badge">Kubernetes</span>
+                <span class="badge">CI/CD Pipelines</span>
+
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Experience</h1>
+        <div class="section-container">
+            <div class="experience-details-container">
+                <div class="experience-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Machine Learning Engineer</h3>
+                        <p>DataQuad Inc | Remote</p>
+                        <ul>
+                            <li>Engineered an LLM-powered customer service automation system, integrating transformer-based models with real-time inference APIs.</li>
+                            <li>Architected scalable ML pipelines with feature stores, model registries, and distributed training across AWS, GCP, and Azure.</li>
+                            <li>Designed and deployed MLOps workflows with CI/CD for model deployment, automated drift detection, and retraining pipelines using Kubeflow and MLflow..</li>
+                        </ul>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>AI/ML Intern</h3>
+                        <p>Delta Air Lines | Atlanta</p>
+                        <ul>
+                            <li>	Integrated LLM-based retrieval-augmented generation (RAG) into IT support chatbots, enhancing contextual accuracy using FAISS and vector embeddings.</li>
+                            <li>Developed predictive maintenance models using LSTMs and XGBoost for anomaly detection in aircraft sensor data, reducing unexpected failures.</li>
+                            <li>Built real-time event-driven data pipelines with Kafka and Spark Streaming, processing telemetry data from aircraft systems for proactive issue detection.</li>
+                        </ul>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Data Analyst</h3>
+                        <p>DBS Tech | Hyderabad</p>
+                        <ul>
+                            <li>Developed fraud detection models leveraging ML techniques, including unsupervised anomaly detection using Isolation Forests and Autoencoders.</li>
+                            <li>Optimized SQL-based ETL processes with partitioning and indexing, improving query performance in PostgreSQL and BigQuery.</li>
+                            <li>Created interactive Power BI dashboards connected to real-time OLAP cubes, enabling automated risk scoring and financial forecasting.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="experience">
+      <p class="section__text__p1">Explore my</p>
+      <h1 class="title">Experience</h1>
+      <div class="timeline">
+          <div class="timeline-item">
+              <div class="timeline-content">
+                  <div class="experience-header">
+                      <img src="./assets/dataQuad-logo.jpeg" alt="Experience icon" class="icon" />
+                      <h3>Machine Learning Engineer</h3>
+                  </div>
+                  <p>DataQuad Inc | Remote</p>
+                  <span class="experience-date">Aug 2023 - Present</span>
+                  <ul>
+                      <li>Engineered an LLM-powered customer service automation system, integrating transformer-based models with real-time inference APIs.</li>
+                      <li>Architected scalable ML pipelines with feature stores, model registries, and distributed training across AWS, GCP, and Azure.</li>
+                      <li>Designed and deployed MLOps workflows with CI/CD for model deployment, automated drift detection, and retraining pipelines using Kubeflow and MLflow.</li>
+                  </ul>
+              </div>
+          </div>
+  
+          <div class="timeline-item">
+              <div class="timeline-content">
+                  <div class="experience-header">
+                      <img src="./assets/delta-logo.png" alt="Experience icon" class="icon" />
+                      <h3>AI/ML Intern</h3>
+                  </div>
+                  <p>Delta Air Lines | Atlanta</p>
+                  <span class="experience-date">May 2023 - Aug 2023</span>
+                  <ul>
+                      <li>Integrated LLM-based retrieval-augmented generation (RAG) into IT support chatbots, enhancing contextual accuracy using FAISS and vector embeddings.</li>
+                      <li>Developed predictive maintenance models using LSTMs and XGBoost for anomaly detection in aircraft sensor data, reducing unexpected failures.</li>
+                      <li>Built real-time event-driven data pipelines with Kafka and Spark Streaming, processing telemetry data from aircraft systems for proactive issue detection.</li>
+                  </ul>
+              </div>
+          </div>
+  
+          <div class="timeline-item">
+              <div class="timeline-content">
+                  <div class="experience-header">
+                      <img src="./assets/dbs-logo.png" alt="Experience icon" class="icon" />
+                      <h3>Data Analyst</h3>
+                  </div>
+                  <p>DBS Tech | Hyderabad</p>
+                  <span class="experience-date">July 2020 - April 2022</span>
+                  <ul>
+                      <li>Developed fraud detection models leveraging ML techniques, including unsupervised anomaly detection using Isolation Forests and Autoencoders.</li>
+                      <li>Optimized SQL-based ETL processes with partitioning and indexing, improving query performance in PostgreSQL and BigQuery.</li>
+                      <li>Created interactive Power BI dashboards connected to real-time OLAP cubes, enabling automated risk scoring and financial forecasting.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Showcasing My Work</p>
+    <h1 class="title">Projects</h1>
+    <div class="projects-container">
+        
+        <!-- CareConnect Project -->
+        <div class="project-card">
+            <h3>CareConnect</h3>
+            <p>An AI-powered healthcare consultation platform leveraging Google's Gemini Pro model for medical image analysis and health consultations.</p>
+            <div class="tech-stack">
+                <span class="badge">Python</span>
+                <span class="badge">FastAPI</span>
+                <span class="badge">MongoDB</span>
+            </div>
+            <a href="https://github.com/karthvik-s/CareConnect" target="_blank" class="github-link">
+                <img src="./assets/github.png" alt="GitHub" class="icon" /> GitHub
+            </a>
+        </div>
+
+        <!-- unlearn-LLMs Project -->
+        <div class="project-card">
+            <h3>unlearn-LLMs</h3>
+            <p>Research project exploring AI model unlearning techniques for improving privacy in large language models.</p>
+            <div class="tech-stack">
+                <span class="badge">Transformers</span>
+                <span class="badge">PyTorch</span>
+                <span class="badge">LLM</span>
+            </div>
+            <a href="https://github.com/karthvik-s/unlearn-LLMs" target="_blank" class="github-link">
+                <img src="./assets/github.png" alt="GitHub" class="icon" /> GitHub
+            </a>
+        </div>
+
+        <!-- ClimatePulse Project -->
+        <div class="project-card">
+            <h3>ClimatePulse</h3>
+            <p>AI-powered climate analytics platform for real-time environmental monitoring and forecasting.</p>
+            <div class="tech-stack">
+                <span class="badge">TensorFlow</span>
+                <span class="badge">Flask</span>
+                <span class="badge">AWS Lambda</span>
+            </div>
+            <a href="https://github.com/karthvik-s/ClimatePulse" target="_blank" class="github-link">
+                <img src="./assets/github.png" alt="GitHub" class="icon" /> GitHub
+            </a>
+        </div>
+
+        <!-- Anomaly Detection Project -->
+        <div class="project-card">
+            <h3>Anomaly Detection for Credit Card Fraud</h3>
+            <p>Deep learning-based fraud detection system using LSTMs and autoencoders.</p>
+            <div class="tech-stack">
+                <span class="badge">Python</span>
+                <span class="badge">TensorFlow</span>
+                <span class="badge">Neural Networks</span>
+            </div>
+            <a href="https://github.com/karthvik-s/Anomaly-Detection-for-Credit-Card-Fraud-A-Deep-Learning-Approach" target="_blank" class="github-link">
+                <img src="./assets/github.png" alt="GitHub" class="icon" /> GitHub
+            </a>
+        </div>
+        
+    </div>
+</section>
+<section id="contact">
+  <div class="contact-container">
+      <h1 class="title">Let's Connect</h1>
+      <p class="contact-subtext">Always happy to chat—whether it's about AI, tech, or just cool ideas. Feel free to reach out!</p>
+
+      <div class="contact-info">
+          <div class="contact-item">
+              <span>📧</span>
+              <a href="mailto:karthvik.s@gmail.com">karthvik.s[at]gmail.com</a>
+          </div>
+          <div class="contact-item">
+              <span>📍</span>
+              <p>New York, NY</p>
+          </div>
+      </div>
+
+      <div class="social-icons">
+          <a href="https://github.com/karthvik-s" target="_blank">
+              <img src="./assets/github.png" alt="GitHub" class="icon" />
+          </a>
+      </div>
+  </div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright &#169; Karthvik Sarvade. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
