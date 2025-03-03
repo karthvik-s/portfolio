@@ -48,11 +48,11 @@
         <div class="section__text">
           <p class="section__text__p1">Hello, I'm</p>
           <h1 class="title">Karthvik Sarvade</h1>
-          <p class="section__text__p2">AI/ML Engineer</p>
+          <p class="section__text__p2">Machine Learning Engineer</p>
           <div class="btn-container">
             <button
               class="btn btn-color-2"
-              onclick="window.open('./assets/karthvik-sarvade-resume.pdf')"
+              onclick="window.open('./assets/karthvik_sarvade_resume.pdf')"
             >
               Download CV
             </button>
@@ -63,11 +63,18 @@
           <div id="socials-container">
             
             <img
+              src="./assets/linkedIn.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/karthvik/'"
+            />
+            <img
               src="./assets/github.png"
               alt="My Github profile"
               class="icon"
               onclick="location.href='https://github.com/karthvik-s'"
             />
+
           </div>
         </div>
     </section> 
@@ -103,7 +110,7 @@
                       <img src="./assets/nyu-logo.png" alt="NYU logo" class="uni-logo" />
                       <h3>Master of Science in Computer Science</h3>
                       <p>New York University</p>
-                      <p class="education-date">August 2022 – May 2024</p>
+                      <!--<p class="education-date">August 2022 – May 2024</p> -->
                       <ul>
                           <li>Specialized in Machine Learning, Deep Learning and Cloud Technologies.</li>
                           <li>Led research on Machine Unlearning in LLMs, to selectively remove information while maintaining model performance </li>
@@ -114,7 +121,7 @@
                       <img src="./assets/jain-logo.png" alt="Jain University logo" class="uni-logo" />
                       <h3>Bachelor's in Electronics & Computers</h3>
                       <p>Jain University</p>
-                      <p class="education-date">August 2018 – May 2022</p>
+                      <!--<p class="education-date">August 2018 – May 2022</p> -->
                       <ul>
                           <li>Graduated with First Class Honours, consistently ranked in top 5% of class across all semesters</li>
                           <li>Conducted research in IoT and Embedded Systems, published in IEEE conferences.</li>
@@ -253,47 +260,33 @@
           <div class="timeline-item">
               <div class="timeline-content">
                   <div class="experience-header">
-                      <img src="./assets/dataQuad-logo.jpeg" alt="Experience icon" class="icon" />
+                      <img src="./assets/capitalone-logo.png" alt="Experience icon" class="icon" />
                       <h3>Machine Learning Engineer</h3>
                   </div>
-                  <p>DataQuad Inc | Remote</p>
-                  <span class="experience-date">Aug 2023 - Present</span>
+                  <p>Capital One | Remote</p>
+                  <span class="experience-date">July 2021 - Present</span>
                   <ul>
-                      <li>Engineered an LLM-powered customer service automation system, integrating transformer-based models with real-time inference APIs.</li>
-                      <li>Architected scalable ML pipelines with feature stores, model registries, and distributed training across AWS, GCP, and Azure.</li>
+                      <li>Lead development of multimodal fraud detection systems combining graph neural networks (GNNs) and transformer architectures.</li>
+                      <li>Optimized Capital One’s Eno virtual assistant by fine-tuning a distilled BERT model for intent classification.</li>
                       <li>Designed and deployed MLOps workflows with CI/CD for model deployment, automated drift detection, and retraining pipelines using Kubeflow and MLflow.</li>
                   </ul>
               </div>
           </div>
   
-          <div class="timeline-item">
-              <div class="timeline-content">
-                  <div class="experience-header">
-                      <img src="./assets/delta-logo.png" alt="Experience icon" class="icon" />
-                      <h3>AI/ML Intern</h3>
-                  </div>
-                  <p>Delta Air Lines | Atlanta</p>
-                  <span class="experience-date">May 2023 - Aug 2023</span>
-                  <ul>
-                      <li>Integrated LLM-based retrieval-augmented generation (RAG) into IT support chatbots, enhancing contextual accuracy using FAISS and vector embeddings.</li>
-                      <li>Developed predictive maintenance models using LSTMs and XGBoost for anomaly detection in aircraft sensor data, reducing unexpected failures.</li>
-                      <li>Built real-time event-driven data pipelines with Kafka and Spark Streaming, processing telemetry data from aircraft systems for proactive issue detection.</li>
-                  </ul>
-              </div>
-          </div>
+          
   
           <div class="timeline-item">
               <div class="timeline-content">
                   <div class="experience-header">
-                      <img src="./assets/dbs-logo.png" alt="Experience icon" class="icon" />
-                      <h3>Data Analyst</h3>
+                      <img src="./assets/nyu-logo.png" alt="Experience icon" class="icon" />
+                      <h3>Research Assistant</h3>
                   </div>
-                  <p>DBS Tech | Hyderabad</p>
-                  <span class="experience-date">July 2020 - April 2022</span>
+                  <p>New York University | New York</p>
+                  <span class="experience-date">Sept 2019 - May 2021</span>
                   <ul>
-                      <li>Developed fraud detection models leveraging ML techniques, including unsupervised anomaly detection using Isolation Forests and Autoencoders.</li>
-                      <li>Optimized SQL-based ETL processes with partitioning and indexing, improving query performance in PostgreSQL and BigQuery.</li>
-                      <li>Created interactive Power BI dashboards connected to real-time OLAP cubes, enabling automated risk scoring and financial forecasting.</li>
+                      <li>Contributed to the M²LInES initiative, a Schmidt Futures-funded project using ML to reduce biases in climate models.</li>
+                      <li>Developed neural closure models for ocean turbulence parameterization in PyTorch.</li>
+                      <li>Collaborated with climate scientists and ML researchers to analyze 50TB of high-resolution climate simulation data (CESM, GFDL) using Dask and Xarray.</li>
                   </ul>
               </div>
           </div>
@@ -382,6 +375,9 @@
           <a href="https://github.com/karthvik-s" target="_blank">
               <img src="./assets/github.png" alt="GitHub" class="icon" />
           </a>
+          <a href="https://www.linkedin.com/in/karthvik/" target="_blank">
+            <img src="./assets/linkedIn.png" alt="LinkedIn" class="icon" />
+        </a>
       </div>
   </div>
 </section>
